@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot - TnCSimplifier</title>
+  <link rel="stylesheet" href="..\static\assets\bootstrap\css\bootstrap.min.css">
+  <link rel="stylesheet" href="..\static\assets\socicon\css\styles.css">
+  <link rel="stylesheet" href="..\static\assets\theme\css\style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <style>
+    body {
+      font-family: 'Inter Tight', sans-serif;
+      background-color: #f4f4f4; /* Light grey background */
+      color: #495057; /* Dark grey text */
+    }
+
+    .chatbot-container {
+      width: 80%;
+      max-width: 600px;
+      margin: 5% auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 0.25rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .chat-messages {
+      height: 300px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      background: #e9e9e9;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+    }
+
+    #chat-form {
+      display: flex;
+      gap: 10px;
+    }
+
+    #chat-form input {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid #007bff; /* Blue border */
+      border-radius: 0.25rem;
+      background-color: #fff;
+    }
+
+    #chat-form button {
+      padding: 10px 20px;
+      background-color: #38796A; /* Green color */
+      color: white;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+
+    /* User and Bot message styles */
+    .user-message {
+      color: #28a745; /* Green color for user */
+    }
+
+    .bot-message {
+      color: #007bff; /* Blue color for bot */
+    }
+
+    .navbar-caption {
+      color: black; /* Change text color to black */
+      font-size: 1.5rem; /* Reduce font size */
+    }
+
+    #chat-form input {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid #007bff;
+      border-radius: 0.25rem;
+      background-color: #fff;
+    }
+
+    #chat-form button {
+      padding: 10px 20px;
+      background-color: #38796A; /* Green color */
+      color: white;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+<section data-bs-version="5.1" class="menu menu2 cid-tJS6tZXiPa" once="menu" id="menu02-0">
+  <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+    <div class="container">
+      <div class="navbar-brand">
+        <span class="navbar-logo">
+          <a href="https://mobirise.com">
+            <img src="..\static\assets\images\tnc-96x100.png" alt="logo" style="height: 3rem;">
+          </a>
+        </span>
+        <span class="navbar-caption text-black text-primary display-6">TnCSimplifier</span>
+      </div>
+      <div class="navbar-buttons mbr-section-btn">
+        <a class="btn btn-primary display-6" href="/page1" style="background-color: #38796A;"> Start now</a>
+      </div>
+    </div>
+  </nav>
+</section>
+    
+<section class="chatbot-container">
+    <div class="chat-messages" id="chat-messages"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Ask me anything..." autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+</section>
+
+<script>
+  document.getElementById('chat-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const userInput = document.getElementById('user-input').value;
+    fetch('/api/chatbot', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({message: userInput})
+    })
+    .then(response => response.json())
+    .then(data => {
+      const messagesContainer = document.getElementById('chat-messages');
+      messagesContainer.innerHTML += `<div class="user-message">User: ${userInput}</div><div class="bot-message">Bot: ${data.reply}</div>`;
+      document.getElementById('user-input').value = ''; // Clear input field
+      messagesContainer.scrollTop = messagesContainer.scrollHeight; // Auto scroll to the bottom
+    })
+    .catch(error => console.error('Error:', error));
+  });
+</script>
+
+</body>
+</html>
