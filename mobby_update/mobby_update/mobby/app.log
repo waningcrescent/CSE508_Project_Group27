@@ -1,0 +1,71 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-664-718
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/bootstrap/css/bootstrap-grid.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/web/assets/mobirise-icons2/mobirise2.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/animatecss/animate.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/dropdown/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/bootstrap/css/bootstrap-reboot.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/socicon/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/theme/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/images/tnc-96x100.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/mobirise/css/mbr-additional.css?v=fCcHiH HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/images/tnc-paper-612x393.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/images/mbr-1-703x497.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/images/ocr-450x360.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[33mGET /assets/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/images/mbr-703x497.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[33mGET /assets/smoothscroll/smooth-scroll.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[33mGET /assets/ytplayer/index.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[33mGET /assets/dropdown/js/navbar-dropdown.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[33mGET /assets/theme/js/script.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/images/mbr-170x144.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/images/mbr-3-170x170.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/images/mbr-2-170x170.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:01] "[36mGET /static/assets/images/tnc-96x100.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "GET /page1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[33mGET /static/assets/web/static/assets/mobirise-icons2/mobirise2.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/bootstrap/css/bootstrap-grid.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/bootstrap/css/bootstrap-reboot.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/animatecss/animate.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/socicon/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/dropdown/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/theme/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/mobirise/css/mbr-additional.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/smoothscroll/smooth-scroll.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/ytplayer/index.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:03] "[36mGET /static/assets/dropdown/js/navbar-dropdown.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Apr/2024 15:21:11] "[31m[1mPOST /process-input HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in '/mnt/c/Users/leifo/Downloads/mobby_update/mobby/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-664-718
+INFO:werkzeug: * Detected change in '/mnt/c/Users/leifo/Downloads/mobby_update/mobby/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-664-718
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-664-718
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-664-718
+INFO:werkzeug: * Detected change in '/mnt/c/Users/leifo/Downloads/mobby_update/mobby/app.py', reloading
+INFO:werkzeug: * Restarting with stat
