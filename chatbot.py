@@ -1,7 +1,8 @@
+import os
 import google.generativeai as genai
 
 def chatbot_response(user_text):
-    api_key="AIzaSyCrkcA_n7wp100fxfgrUwYK_jCIMLEt9jk"
+    api_key = os.environ.get("GOOGLE_API_KEY", "YOUR_GOOGLE_API_KEY_HERE")
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel("gemini-pro")
     response = model.generate_content(user_text)
